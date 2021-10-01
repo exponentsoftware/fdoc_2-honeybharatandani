@@ -16,12 +16,17 @@ const countries = [
   "KENYA",
 ];
 
-const createArrayOfArrays = [];
-for (i = 0; i < countries.length; i++) {
-  createArrayOfArrays.push([
-    countries[i],
-    countries[i].length,
-    countries[i].slice(0, 3),
-  ]);
-}
-console.log(createArrayOfArrays);
+// const createArrayOfArrays = [];
+// for (i = 0; i < countries.length; i++) {
+//   createArrayOfArrays.push([
+//     countries[i],
+//     countries[i].length,
+//     countries[i].slice(0, 3),
+//   ]);
+// }
+
+const countryDetails = countries.map(country => {
+  return [country, country.slice(0, 3), country.length];
+});
+
+console.log(countryDetails);
