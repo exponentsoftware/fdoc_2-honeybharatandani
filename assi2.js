@@ -43,8 +43,15 @@ const users = [
   },
 ];
 
-let user = users.filter(function (e) {
-  return e.scores > 85;
+// used filter method
+
+let filteredUsers = users.filter(function (user) {
+  return user.scores > 85;
 });
-console.log("users who scored greater than 85");
-console.log(user);
+console.log("users who scored greater than 85 are");
+console.log(filteredUsers);
+
+// Write a function which addUser to the user array only if the user does not exist.
+//push if else
+// Write a function which addUserSkill which can add skill to a user only if the user exist.
+// Write a function which editUser if the user exist in the users array.
