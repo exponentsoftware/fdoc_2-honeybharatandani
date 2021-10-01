@@ -16,7 +16,7 @@ const countries = [
   "KENYA",
 ];
 
-const createArrayOfArrays = [countries];
+const createArrayOfArrays = [];
 for (i = 0; i < countries.length; i++) {
   createArrayOfArrays.push([countries[i], countries[i].length]);
 }
