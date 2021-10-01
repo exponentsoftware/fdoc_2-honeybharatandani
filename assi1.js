@@ -18,6 +18,10 @@ const countries = [
 
 const createArrayOfArrays = [];
 for (i = 0; i < countries.length; i++) {
-  createArrayOfArrays.push([countries[i], countries[i].length]);
+  createArrayOfArrays.push([
+    countries[i],
+    countries[i].length,
+    countries[i].slice(0, 3),
+  ]);
 }
 console.log(createArrayOfArrays);
